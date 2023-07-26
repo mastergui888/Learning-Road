@@ -185,7 +185,8 @@ int luaopen_exe(lua_State *L)
 {
 //	luaL_newlib(L, my_lib);
 
-//	just for exe_30_ear
+//	just for exe_30_6
+//	Ref: https://stackoverflow.com/questions/46021982/lua-shared-upvalue-example-in-c
 	luaL_newlibtable(L, my_lib);
 	lua_newtable(L);
 	luaL_setfuncs(L, my_lib, 1);
